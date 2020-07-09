@@ -1,0 +1,5 @@
+#!/bin/bash
+
+function git_version_describe {
+    git describe --tags HEAD | tr - .
+}
