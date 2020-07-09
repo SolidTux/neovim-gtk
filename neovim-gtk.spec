@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           neovim-gtk
 Version:        {{{ git_version_describe }}}
 Release:        1%{?dist}
@@ -22,10 +24,10 @@ GTK ui for neovim written in rust using gtk-rs bindings. With ligatures support.
 cargo build --release
 
 %install
-cargo install --path . --root %{buildroot}/usr
+cargo install --no-track --path . --root %{buildroot}/usr
 
 %files
-/usr/bin/neovim-gtk
+/usr/bin/nvim-gtk
 
 %changelog
 {{{ git_dir_changelog }}}
