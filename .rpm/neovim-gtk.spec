@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
-Name:           neovim-gtk
-Version:        {{{ git_version_describe }}}
+Name:           {{{ git_dir_name }}}
+Version:        {{{ git_version }}}
 Release:        1%{?dist}
 Summary:        GTK ui for neovim.
 
